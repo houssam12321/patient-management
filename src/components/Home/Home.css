@@ -1,0 +1,49 @@
+/* styles.css */
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 6rem;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    height: 6cm;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .col {
+    width: calc(50% - 15px); /* Pour prendre en compte les marges */
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px  #ccc;
+    height: 5rem;
+  }
+  
+  .col h2 {
+    margin-top: 0;
+  }
+  .Nav{
+    background-color: rgb(54, 141, 142);
+    height: 5rem;
+    
+  }
+  .logo {
+    width: 70px; /* Ajustez la largeur selon vos besoins */
+    height: 70px; /* Hauteur automatique pour conserver le ratio d'aspect */
+    margin-right: 90%;
+  }
+  .b{
+    cursor: pointer;
+    color: white;
+
+    border-radius: 40px ;
+    height: 14rem;
+    width: 20rem;
+    background-color: rgb(70, 126, 136);
+    font-size: 20px;
+    
+  }
+  
