@@ -1,26 +1,21 @@
 /* styles.css */
 
 .container {
-    max-width: 960px;
     margin: 0 auto;
-    margin-top: 6rem;
+    margin-top: 5rem;
+    align-items: center;
   }
   
   .row {
     display: flex;
-    justify-content: space-between;
-    height: 6cm;
-    text-align: center;
-    align-items: center;
+    justify-content: center;
+    display: inline-block; /* Ajout pour afficher les liens en ligne */
+    width: 40rem;
+
+    
   }
   
-  .col {
-    width: calc(50% - 15px); /* Pour prendre en compte les marges */
-    padding: 15px;
-    background-color: #f0f0f0;
-    border: 1px  #ccc;
-    height: 5rem;
-  }
+  
   
   .col h2 {
     margin-top: 0;
@@ -38,12 +33,19 @@
   .b{
     cursor: pointer;
     color: white;
+    font-family: unset;
+    font-weight:bold;
+    margin: 20px;
 
     border-radius: 40px ;
-    height: 14rem;
-    width: 20rem;
+    height: 9rem;
+    width: 17rem;
     background-color: rgb(70, 126, 136);
     font-size: 20px;
+    padding: 3rem;
+    display: inline-block; /* Ajout pour afficher les liens en ligne */
+    text-decoration: none;
+
     
   }
   

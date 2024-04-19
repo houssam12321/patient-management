@@ -12,20 +12,14 @@ export default function Home() {
         </div>
     
     <div className='container'>
-        <p style={{fontFamily:'cursive' , fontSize:'2rem'}}> Bienvenue dans notre plateforme !</p>
-      <div className='row'>
-        {/* Section pour l'espace client */}
-        <div className='col'>
-          <Link to="patient" className='b'>Espace Patient</Link>
-          {/* Mettez ici le contenu spécifique à l'espace client */}
-        </div>
-        {/* Section pour l'espace administrateur */}
-        <div className='col'>
-        <Link to="/admin" className='b'>Espace Admin</Link>
-          {/* Mettez ici le contenu spécifique à l'espace administrateur */}
-        </div>
-      </div>
+        <p style={{fontFamily:'unset', fontWeight:'bold', fontSize:'2rem'}}> Bienvenue dans notre plateforme !</p>
+        <div className='row'>
+  <Link to="patient" className='b left-link'>Espace Patient</Link>
+  <Link to="/admin" className='b right-link'>Espace Admin</Link>
+</div>
+        
     </div>
+      
     </div>
   )
 }
