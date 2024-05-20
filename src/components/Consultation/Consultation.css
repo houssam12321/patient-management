@@ -27,3 +27,23 @@
     flex: 1;
   }
   
+  .input-p{
+    color: aqua;
+    width: 20rem;
+  }
+
+  .core-c {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .input-p {
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    margin-top: 20px;
+    color: green; /* or red for error messages */
+  }
+  

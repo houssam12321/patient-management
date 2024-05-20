@@ -4,7 +4,7 @@ import AdminSidebar from '../AdminSidebar/AdminSidebar';
 import logo from '../../Assets/2.png';
 import './Dpatient.css';
 
-export default function Dpatient() {
+export default function AjoutPatient() {
   const [formData, setFormData] = useState({
     nom: '',
     prenom: '',

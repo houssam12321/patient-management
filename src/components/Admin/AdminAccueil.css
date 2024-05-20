@@ -1,0 +1,27 @@
+.nbr-patient{
+    height: 6cm;
+    width: 9cm;
+    background-color: rgb(104, 159, 149);
+    margin-left: 8cm;
+    margin-top: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.nbr-consult {
+    height: 6cm;
+    width: 9cm;
+    background-color: gray;
+    margin-left: 20cm;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

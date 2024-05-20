@@ -15,7 +15,7 @@ export default function Home() {
         <p style={{fontFamily:'unset', fontWeight:'bold', fontSize:'2rem'}}> Bienvenue dans notre plateforme !</p>
         <div className='row'>
   <Link to="patient" className='b left-link'>Espace Patient</Link>
-  <Link to="/admin" className='b right-link'>Espace Admin</Link>
+  <Link to="/admin/accueil" className='b right-link'>Espace Admin</Link>
 </div>
         
     </div>

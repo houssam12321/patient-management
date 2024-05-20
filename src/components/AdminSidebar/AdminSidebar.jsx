@@ -94,7 +94,7 @@ export default function ClippedDrawer() {
             </ListItemButton>
             <Collapse in={openConsultations} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
-                <ListItemButton sx={{ pl: 4 }} component={Link} to="/admin/ajoutConsultation">
+                <ListItemButton sx={{ pl: 4 }} component={Link} to="/AjoutC">
                   <ListItemIcon>
                     <InboxIcon />
                   </ListItemIcon>
@@ -121,14 +121,9 @@ export default function ClippedDrawer() {
                   <ListItemIcon>
                     <InboxIcon />
                   </ListItemIcon>
-                  <ListItemText primary={<span className= "boldText sizeText" >Ajout</span>} />
+                  <ListItemText primary={<span className= "boldText sizeText" >Espace rendez-vous</span>} />
                 </ListItemButton>
-                <ListItemButton sx={{ pl: 4 }}>
-                  <ListItemIcon>
-                    <MailIcon />
-                  </ListItemIcon>
-                  <ListItemText primary={<span className= "boldText sizeText" >Voir</span>} />
-                </ListItemButton>
+               
               </List>
             </Collapse>
           </List>

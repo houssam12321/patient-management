@@ -1,0 +1,7 @@
+.rdv {
+    margin-left: 15rem; /* Ajoute une marge de 20px à gauche */
+    background-color: white;
+    height: 40rem;
+    width: auto;
+    border-radius: 33px;
+}

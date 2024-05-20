@@ -17,9 +17,15 @@ export default function AjoutConsultation() {
             <option value="">Sélectionner un patient</option>
           </select><br />
           
-          <label>Date et heure de la consultation:</label>
-          <input type="datetime-local" name="dateHeure" required /><br />
-
+          <div className="mb-3">
+              <label className="form-label">Date de naissance</label>
+              <input
+                type="date"
+                className="form-control"
+                name="date_naissance"
+               
+              />
+            </div>
           
 
           <label>Médecin traitant:</label>
@@ -28,22 +34,85 @@ export default function AjoutConsultation() {
           </select><br />
         </div>
         <div className="right-column">
-          <label>Symptômes:</label>
-          <textarea name="symptomes" rows="2" cols="50" required></textarea><br />
-
-          <label>Diagnostic:</label>
-          <textarea name="diagnostic" rows="2" cols="50" required></textarea><br />
-
-          <label>Prescription:</label>
-          <textarea name="prescription" rows="2" cols="50" required></textarea><br />
-
-          <label>Notes supplémentaires:</label>
-          <textarea name="notes" rows="4" cols="50"></textarea><br />
+        <div className="mb-3">
+              <label className="form-label">Symptpomes</label>
+              <input
+                type="text"
+                className="form-control"
+          
+              />
+            </div>
+            <div className="mb-3">
+              <label className="form-label">Diagnostic</label>
+              <input
+                type="text"
+                className="form-control"
+          
+              />
+            </div>
+          
+            <div className="mb-3">
+              <label className="form-label">Notes suplimentaire</label>
+              <input
+                type="text"
+                className="form-control"
+          
+              />
+            </div>
 
           
         </div>
       </div>
-      <button type="submit">Enregistrer</button>
+      <button type='submit' className="button2">Ajouter</button>
+      <div className='consult-cont'>
+      <form className='form1' >
+            <div className="mb-3">
+              <label className="form-label">Patient</label>
+              <input className='form-control' type="text" />
+            </div>
+            <div className="mb-3">
+              <label className="form-label">Prenom</label>
+              <input
+                type="text"
+                className="form-control"
+          
+              />
+            </div>
+            <div className="mb-3">
+              <label className="form-label">Date de naissance</label>
+              <input
+                type="date"
+                className="form-control"
+                name="date_naissance"
+               
+              />
+            </div>
+            <div className="mb-3">
+              <label className="form-label">Adresse</label>
+              <input
+                type="text"
+                className="form-control"
+                name="adresse"
+              />
+            </div>
+            <div className="mb-3">
+              <label className="form-label">CIN</label>
+              <input
+                type="text"
+                className="form-control"
+                name="cin"
+             
+              />
+            </div>
+            
+           <button type='submit' className="button2">Ajouter</button>
+           
+
+
+          </form>
+
+
+      </div>
     </div>
   );
 }

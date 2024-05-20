@@ -1,0 +1,105 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 5rem;
+  }
+  
+  .logo {
+    width: 70px;
+  }
+  
+  .InputContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .searchButton {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .searchButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 20px;
+  }
+  
+  .infoContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px;
+  }
+  
+  .PatientInfo {
+    margin-top: 3cm;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Consultations {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 2rem;
+  }
+  
+  .consultationItem {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .consultationsCount {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+  }
+  
+  .pdfButton {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #278538;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .pdfButton:hover {
+    background-color: #0056b3;
+  }
+  
