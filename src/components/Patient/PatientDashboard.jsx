@@ -80,6 +80,10 @@ const PatientDashboard = () => {
     });
   };
 
+  const getTotalFees = () => {
+    return consultations.reduce((total, consultation) => total + consultation.fraisConsultation, 0);
+  };
+
   return (
     <div className='dashboard'>
       <div className='Nav'>
@@ -115,8 +119,15 @@ const PatientDashboard = () => {
         {consultations.length > 0 && (
           <div id='consultations' className='Consultations'>
             <h2><SummarizeRoundedIcon fontSize="large"/> Consultations</h2>
-            <div className='consultationsCount'>
-              Nombre de consultations: {consultations.length}
+            <div className='statsContainer'>
+              <div className='statBox '>
+                <div className='statTitle'>Nombre Tolale des consultations:</div>
+                <div className='statValue'>{consultations.length}</div>
+              </div>
+              <div className='statBox ' >
+                <div className='statTitle'>Montant Total des Frais de Consultation:</div>
+                <div className='statValue'>{getTotalFees()} MAD</div>
+              </div>
             </div>
             <ul>
               {consultations.map(consultation => (
@@ -124,6 +135,7 @@ const PatientDashboard = () => {
                   <p><strong>Date:</strong> {new Date(consultation.dateConsultation).toLocaleDateString()}</p>
                   <p><strong>Motif:</strong> {consultation.motif}</p>
                   <p><strong>Commentaire:</strong> {consultation.commentaire}</p>
+                  <p><strong>Frais de consultation:</strong> {consultation.fraisConsultation} MAD</p>
                 </li>
               ))}
             </ul>

@@ -1,0 +1,46 @@
+{
+  "admin": [
+    {
+      "id": "1",
+      "fname": "alawi",
+      "lname": "ali",
+      "email": "r@gmail.com",
+      "password": "123456",
+      "cpassword": "123456"
+    },
+    {
+      "id": "af53",
+      "fname": "houssam",
+      "lname": "radi",
+      "email": "h@gmail.ma",
+      "password": "123456",
+      "cpassword": "123456"
+    },
+    {
+      "id": "04fa",
+      "fname": "admin",
+      "lname": "ladmin",
+      "email": "admin@gmail.ma",
+      "password": "123456",
+      "cpassword": "123456"
+    }
+  ],
+  "medcin": [
+    {
+      "id": "a56f",
+      "fname": "medcin",
+      "lname": "lmedcin",
+      "email": "med@gmail.ma",
+      "password": "123456",
+      "cpassword": "123456"
+    },
+    {
+      "id": "aa21",
+      "fname": "med",
+      "lname": "haouat",
+      "email": "hawat@gmail.com",
+      "password": "654321",
+      "cpassword": "654321"
+    }
+  ]
+}

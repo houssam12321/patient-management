@@ -4,15 +4,18 @@ import logo from '../../Assets/2.png';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import axios from 'axios';
-import './PatientForm.css';
+import './AjoutMed.css';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
+import Select from '@mui/material/Select';
+import MenuItem from '@mui/material/MenuItem';
 
-export default function PatientForm() {
+export default function MedcinForm() {
   const [nom, setNom] = useState('');
   const [prenom, setPrenom] = useState('');
   const [dateNaissance, setDateNaissance] = useState('');
   const [adresse, setAdresse] = useState('');
   const [cin, setCin] = useState('');
+  const [specialite, setSpecialite] = useState('Radiologie'); // Valeur par défaut : Radiologie
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState({});
 
@@ -46,27 +49,29 @@ export default function PatientForm() {
       setErrors({});
     }
 
-    const patientData = {
+    const medcinData = {
       nom: nom,
       prenom: prenom,
       date_naissance: dateNaissance,
       adresse: adresse,
-      cin: cin
+      cin: cin,
+      specialite: specialite
     };
 
     try {
-      const response = await axios.post('http://localhost:8083/patient', patientData);
-      console.log('Patient ajouté avec succès :', response.data);
-      setMessage('Patient ajouté avec succès');
-      // Réinitialiser le formulaire après l'ajout du patient
+      const response = await axios.post('http://localhost:8083/medcin', medcinData);
+      console.log('Médecin ajouté avec succès :', response.data);
+      setMessage('Médecin ajouté avec succès');
+      // Réinitialiser le formulaire après l'ajout du médecin
       setNom('');
       setPrenom('');
       setDateNaissance('');
       setAdresse('');
       setCin('');
+      setSpecialite('');
     } catch (error) {
-      setMessage('Erreur lors de l\'ajout du patient');
-      console.error('Erreur lors de l\'ajout du patient :', error);
+      setMessage('Erreur lors de l\'ajout du médecin');
+      console.error('Erreur lors de l\'ajout du médecin :', error);
     }
   };
 
@@ -79,7 +84,7 @@ export default function PatientForm() {
       <div className='core-p' style={{ width: '44rem', height: 'auto', marginLeft: '20rem', marginTop: '3rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
           <PersonAddIcon sx={{ fontSize: 30, marginRight: '1rem' }} />
-          <h2 style={{ margin: 0 }}>Ajouter un Patient</h2>
+          <h2 style={{ margin: 0 }}>Ajouter un Médecin</h2>
         </div>
         <form onSubmit={handleSubmit}>
           <TextField
@@ -122,6 +127,16 @@ export default function PatientForm() {
             value={cin}
             onChange={(e) => setCin(e.target.value)}
           />
+          <Select
+            className='input-p'
+            label="Spécialité"
+            value={specialite}
+            onChange={(e) => setSpecialite(e.target.value)}
+          >
+            <MenuItem value="Radiologie">Radiologie</MenuItem>
+            <MenuItem value="Chirurgien">Chirurgien</MenuItem>
+            <MenuItem value="Generaliste">Généraliste</MenuItem>
+          </Select>
           <Button type="submit" variant="contained">Ajouter</Button>
         </form>
         {message && <p className="message">{message}</p>}

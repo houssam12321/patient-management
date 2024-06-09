@@ -1,0 +1,30 @@
+.input-p {
+    margin-bottom: 1.5rem; /* Ajuster la marge selon vos besoins */
+    width: 100%;
+  }
+  
+  .message {
+    margin-top: 1rem;
+    color: green;
+    font-weight: bold;
+  }
+  
+  .Nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 5rem;
+  }
+  
+  .logo {
+    width: 70px;
+  }
+  
+  .core-p {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

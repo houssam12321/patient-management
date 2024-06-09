@@ -7,6 +7,9 @@ import Button from '@mui/material/Button';
 import axios from 'axios';
 import './Consultation.css';
 import NoteAddIcon from '@mui/icons-material/NoteAdd';
+import PaidIcon from '@mui/icons-material/Paid';
+import InputAdornment from '@mui/material/InputAdornment';
+
 
 export default function ConsultationForm() {
   const [patients, setPatients] = useState([]);
@@ -16,6 +19,7 @@ export default function ConsultationForm() {
   const [dateConsultation, setDateConsultation] = useState('');
   const [motif, setMotif] = useState('');
   const [commentaire, setCommentaire] = useState('');
+  const [fraisConsultation, setFraisConsultation] = useState('');
   const [message, setMessage] = useState('');
 
   useEffect(() => {
@@ -52,7 +56,8 @@ export default function ConsultationForm() {
         medcin: { id: selectedMedcin.id },
         dateConsultation: dateConsultation,
         motif: motif,
-        commentaire: commentaire
+        commentaire: commentaire,
+        fraisConsultation: fraisConsultation,
       };
 
       try {
@@ -66,6 +71,7 @@ export default function ConsultationForm() {
         setDateConsultation('');
         setMotif('');
         setCommentaire('');
+        setFraisConsultation('');
       } catch (error) {
         setMessage('Erreur lors de l\'ajout de la consultation');
         console.error('Erreur lors de l\'ajout de la consultation :', error);
@@ -133,6 +139,19 @@ export default function ConsultationForm() {
             value={commentaire}
             onChange={(e) => setCommentaire(e.target.value)}
           />
+          <TextField
+  label="Frais de consultation"
+  className='input-p'
+  value={fraisConsultation}
+  onChange={(e) => setFraisConsultation(e.target.value)}
+  InputProps={{ // Utilisez InputProps pour personnaliser l'élément d'entrée
+    startAdornment: ( // Définissez startAdornment pour ajouter l'icône
+      <InputAdornment position="start">
+        <PaidIcon />
+      </InputAdornment>
+    ),
+  }}
+/>
           <Button type="submit" variant="contained">Ajouter</Button>
         </form>
         {message && <p className="message">{message}</p>}

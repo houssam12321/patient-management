@@ -1,27 +1,57 @@
-.nbr-patient{
-    height: 6cm;
-    width: 9cm;
-    background-color: rgb(104, 159, 149);
+.App {
+  }
+  
+  .Nav {
+    height: 5rem;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .nbr-patient {
     margin-left: 8cm;
-    margin-top: 1rem;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
     font-weight: bold;
-}
-.nbr-consult {
-    height: 6cm;
-    width: 9cm;
-    background-color: gray;
-    margin-left: 20cm;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    background-color: #0948a7;
+    padding: 20px;
+  }
+  
+  .nbr-consultation {
+    margin-right: 3cm;
+    font-size: 30px;
     font-weight: bold;
-}
+    color: #ffffff;
+    background-color: #097da7;
+    padding: 20px;
+  }
+  
+  .statsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .statBox {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    background-color: #0948a7;
+  }
+  
+  .statTitle {
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .statValue {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

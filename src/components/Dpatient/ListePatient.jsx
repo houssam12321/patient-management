@@ -88,7 +88,7 @@ export default function ListePatient() {
                 <td>{patient.nom}</td>
                 <td>{patient.prenom}</td>
                 <td>{patient.adresse}</td>
-                <td>{patient.date_naissance}</td>
+                <td>{new Date(patient.date_naissance).toLocaleDateString()}</td>
                 <td>{patient.cin}</td>
                 <td>
                   <button className="btn btn-primary btn-sm"><InfoIcon/></button>
@@ -104,7 +104,7 @@ export default function ListePatient() {
       {/* Dialogue pour modifier */}
       <Dialog open={openDialog} onClose={handleCloseDialog}>
         <DialogTitle>Modifier Patient</DialogTitle>
-        <DialogContent>
+        <DialogContent sx={{ padding: '2rem', textAlign: 'center' }}>
           <form>
             <label>Nom:</label>
             <input type="text" name="nom" value={updatedPatient.nom} onChange={handleInputChange} />
@@ -123,7 +123,7 @@ export default function ListePatient() {
             <br />
           </form>
         </DialogContent>
-        <DialogActions>
+        <DialogActions sx={{ justifyContent: 'center', paddingBottom: '2rem' }}>
           <Button onClick={handleCloseDialog} color="primary">Annuler</Button>
           <Button onClick={handleSaveChanges} color="primary">Enregistrer</Button>
         </DialogActions>

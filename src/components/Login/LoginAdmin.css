@@ -1,0 +1,81 @@
+.Container {
+    display: flex;
+    box-sizing: border-box;
+
+    position: relative;
+    z-index: 1;
+
+  }
+  .form{
+    margin-top: 3cm;
+    margin-left: 20rem;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .underline {
+    height: 3px;
+    width: 60px;
+    background-color: #58A399;
+    margin: 0 auto;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .label {
+    position: relative;
+    display: block;
+    width: 250px;
+    border-radius: 6px;
+    border: 2px solid #58A399;
+    padding: 15px 8px 15px 10px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #150a0a;
+    font-size: 16px;
+    width: 6cm;
+  }
+  
+  .text-danger {
+    color: red;
+  }
+  
+  .back{
+    border-radius: 10px;
+    background-color: #58A399;
+    height: 15cm;
+    width: 10cm;
+    display: flex;
+    margin-top: 3cm;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  .image{
+    background-color: #58A399;
+    border-radius: 10px;
+    height: 10cm;
+    width: 12cm;
+    margin-left: 2cm;
+    margin-top: 2cm;
+
+  }
