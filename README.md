@@ -1,3 +1,6 @@
+# Screen 
+<img width="960" alt="aut med" src="https://github.com/user-attachments/assets/ef54cf6c-5685-4e9c-8761-f2a80f39b2bb">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
